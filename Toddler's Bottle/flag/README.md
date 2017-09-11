@@ -11,7 +11,7 @@ This is a reversing challenge, and the binary file is packed by UPX. Just unpack
 ## 2. Solution
   * As the challenge says it is a reversing task, let's download the binary file and open it in IDA.  
   </br>
-  ![functions_before_unpark](./functions_before_unpark.png "Fuctions before unpacking")  
+  ![functions_before_unpark](https://github.com/DoubleLabyrinth/pwnable.kr/raw/master/Toddler's%20Bottle/flag/functions_before_unpark.png "Fuctions before unpacking")  
   </br>
 
   * We can find that there are few functions, and a lot of data are unrecognizable. So it probably has been packed.
