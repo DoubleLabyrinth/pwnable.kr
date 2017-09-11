@@ -10,16 +10,15 @@ This is a reversing challenge, and the binary file is packed by UPX. Just unpack
 
 ## 2. Solution
   * As the challenge says it is a reversing task, let's download the binary file and open it in IDA.  
-  </br>
-  ![functions_before_unpark](./functions_before_unpark.png "Fuctions before unpacking")  
-  </br>
+  
+    ![functions_before_unpark](./functions_before_unpark.png "Fuctions before unpacking")
 
   * We can find that there are few functions, and a lot of data are unrecognizable. So it probably has been packed.
 
   * Let's use `Shift + F12` to open IDA's string window:  
-  </br>
-  ![string_window_in_ida](./string_window_in_ida.png "String window in IDA")  
-  </br>
+  
+    ![string_window_in_ida](./string_window_in_ida.png "String window in IDA"）
+  
   We can find there is a string about UPX, so we can assume that this binary file is probably packed by UPX.
 
   * Let's go to [https://upx.github.io/](https://upx.github.io/ "https://upx.github.io/") and download UPX packer.
@@ -43,11 +42,11 @@ This is a reversing challenge, and the binary file is packed by UPX. Just unpack
   * Then we open the output file `flag.unpacked` in IDA. Now the binary can be analyzed normally.  
 
   * Just goto function `main`, we can see there is a global variable named `flag`:  
-  </br>
-  ![function_main](./function_main.png "Function 'main' in IDA")
-  </br>
+  
+    ![function_main](./function_main.png "Function 'main' in IDA")
+  
 
   * Follow the variable, you will see the flag is:
-  </br>
-  ![flag](./flag.png "Flag")
-  </br>
+  
+    ![flag](./flag.png "Flag")
+  
