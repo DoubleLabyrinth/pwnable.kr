@@ -16,9 +16,9 @@ This is a reversing challenge, and the binary file is packed by UPX. Just unpack
   * We can find that there are few functions, and a lot of data are unrecognizable. So it probably has been packed.
 
   * Let's use `Shift + F12` to open IDA's string window:  
-  
-    ![string_window_in_ida](./string_window_in_ida.png "String window in IDA"）
-  
+    
+    ![string_window_in_ida](./string_window_in_ida.png "String window in IDA")  
+    
   We can find there is a string about UPX, so we can assume that this binary file is probably packed by UPX.
 
   * Let's go to [https://upx.github.io/](https://upx.github.io/ "https://upx.github.io/") and download UPX packer.
