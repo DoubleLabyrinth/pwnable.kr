@@ -3,7 +3,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
 
 ## 1. Toddler's Bottle
   * [x] fd
-  * [ ] collision
+  * [x] collision
   * [x] bof
   * [x] flag
   * [ ] passcode
