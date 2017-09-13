@@ -70,7 +70,7 @@ This challenge tells you how terrible it would be if you confuse the operator pr
 
   * We can see that the operator priority is confused. So actually the password is decided by your first input.
 
-  * The second input should be characters xor by 1.
+  * The second input should be characters in the first input xor by 1.
 
   * For example:
     ```bash
