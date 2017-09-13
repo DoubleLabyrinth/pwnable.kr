@@ -141,4 +141,4 @@ This challenge tells you that some of instructions have some special requirement
 
   * So make sure that every time the size of allocated memory plus 8 should be a multiple of 16 and then the test can be done without any errors.
 
-  * As for why we should add 8 to the size of allocated memory, it is because 8 is the size of two member--`prev_size`, `size`-- in structure `malloc_chunk` which before the memory allocated.
+  * As for why we should add 8 to the size of allocated memory, it is because 8 is the size of two member--`prev_size`, `size`-- in structure `malloc_chunk` which is before the memory allocated.
