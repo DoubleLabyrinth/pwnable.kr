@@ -70,4 +70,4 @@ Just build your shellcode and send it.
 
     ```
 
-  * You can see program just calls your shellcode. So nothing hard, just build your shellcode, send it and then run it.
+  * You can see the program just calls your shellcode. So nothing hard, just build your shellcode, send it and then run it.
