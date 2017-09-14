@@ -20,7 +20,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] uaf
   * [ ] codemap
   * [x] memcpy
-  * [ ] asm
+  * [x] asm
   * [ ] unlink
   
 ## 2. Rookiss
