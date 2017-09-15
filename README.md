@@ -21,7 +21,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] codemap
   * [x] memcpy
   * [x] asm
-  * [ ] unlink
+  * [x] unlink
   
 ## 2. Rookiss
   * [ ] brain fuck
