@@ -6,7 +6,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] collision
   * [x] bof
   * [x] flag
-  * [ ] passcode
+  * [x] passcode
   * [x] random
   * [ ] input
   * [ ] leg
