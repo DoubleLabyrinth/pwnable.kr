@@ -18,7 +18,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] cmd1
   * [x] cmd2
   * [x] uaf
-  * [ ] codemap
+  * [x] codemap
   * [x] memcpy
   * [x] asm
   * [x] unlink
