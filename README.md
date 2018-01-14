@@ -13,7 +13,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] mistake
   * [ ] shellshock
   * [x] coin1
-  * [ ] blackjack
+  * [x] blackjack
   * [x] lotto
   * [x] cmd1
   * [x] cmd2
@@ -22,7 +22,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] memcpy
   * [x] asm
   * [x] unlink
-  
+
 ## 2. Rookiss
   * [ ] brain fuck
   * [ ] md5 calculator
@@ -40,7 +40,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] rsa calculator
   * [ ] note
   * [ ] alloca
-  
+
 ## 3. Grotesque
   * [ ] proxy server
   * [ ] rootkit
@@ -57,7 +57,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] lfh
   * [ ] lokihardt
   * [ ] asg
-  
+
 ## 4. Hacker's Secret
   * [ ] unexploitable
   * [ ] tiny
@@ -70,4 +70,3 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] tiny_hard
   * [ ] kcrc
   * [ ] exynos
-  
