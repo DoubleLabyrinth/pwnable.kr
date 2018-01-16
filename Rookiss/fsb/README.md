@@ -47,13 +47,12 @@ If you are a expert of "%n" in `printf`, this challenge is easy.
 
     Watch the stack info, we can find that `$esp + 56` stores the address of function `fsb`'s first argument. And `$esp + 72` stores the previous `EBP`.
 
-    Then in gdb, type `x /128xw *(void**)$ebp-128*4` to see the stack info of function `main`. We can find that `*(void**)$ebp-17*4`, which also is `prev_ebp-17*4` stores the address of `key`.
+    Then in gdb, type `x /128xw *(void**)$ebp-128*4` to see the stack info of function `main`. We can find that `*(void**)$ebp-17*4`, which also is `prev_ebp-17*4`, stores the address of `key`.
 
-  * So, the first time we use `"%14$lx,%18$lx"` to get the address of function `fsb`'s first argument and previous `EBP`, `prev_ebp`.
+  * So, the first time we use `"%14$lx,%18$lx"` to get the address of function `fsb`'s first argument and previous `EBP` named `prev_ebp`.
 
     Calculate the offset between `$esp` and `prev_ebp-17*4` and use `"%16c%klln"` to overwrite the value of `key` to 16, where `k` is the offset calculated out divided by 4.
 
   * After that `key` has been modified to 16 and we don't need the last of 4 exploit chances.
 
   * Finally wait for at least 3 second, and send `"16"` to get shell.
-  
