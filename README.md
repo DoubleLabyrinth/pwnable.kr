@@ -27,7 +27,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] brain fuck
   * [ ] md5 calculator
   * [x] simple login
-  * [ ] otp
+  * [x] otp
   * [ ] ascii_easy
   * [ ] tiny_easy
   * [ ] fsb
