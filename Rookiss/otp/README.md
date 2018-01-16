@@ -1,4 +1,4 @@
-#pwnable.kr -- Rookiss -- otp
+# pwnable.kr -- Rookiss -- otp
 Actually, the program do not check whether it does read `passcode`.
 
 So just use `ulimit -f 0` to forbid program write any bytes and `passcode` will must be `0`.

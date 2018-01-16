@@ -1,4 +1,4 @@
-#pwnable.kr -- Rookiss -- brain fuck
+# pwnable.kr -- Rookiss -- brain fuck
 Try to read items in GOT table and modify them to get shell.
 
 ## 1. Challenge
