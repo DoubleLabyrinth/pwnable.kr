@@ -24,7 +24,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] unlink
 
 ## 2. Rookiss
-  * [ ] brain fuck
+  * [x] brain fuck
   * [ ] md5 calculator
   * [x] simple login
   * [x] otp
