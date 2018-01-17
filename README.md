@@ -11,7 +11,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] input
   * [x] leg
   * [x] mistake
-  * [ ] shellshock
+  * [x] shellshock
   * [x] coin1
   * [x] blackjack
   * [x] lotto
