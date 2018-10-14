@@ -8,7 +8,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] flag
   * [x] passcode
   * [x] random
-  * [ ] input
+  * [x] input
   * [x] leg
   * [x] mistake
   * [x] shellshock
