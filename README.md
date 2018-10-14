@@ -22,6 +22,8 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] memcpy
   * [x] asm
   * [x] unlink
+  * [ ] blukat
+  * [ ] horcruxes
 
 ## 2. Rookiss
   * [x] brain fuck
@@ -40,6 +42,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] rsa calculator
   * [ ] note
   * [ ] alloca
+  * [ ] loveletter
 
 ## 3. Grotesque
   * [ ] proxy server
@@ -57,6 +60,8 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] lfh
   * [ ] lokihardt
   * [ ] asg
+  * [ ] hunter
+  * [ ] mipstake
 
 ## 4. Hacker's Secret
   * [ ] unexploitable
@@ -70,3 +75,6 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] tiny_hard
   * [ ] kcrc
   * [ ] exynos
+  * [ ] combabo calculator
+  * [ ] pwnsandbox
+  * [ ] crcgen
