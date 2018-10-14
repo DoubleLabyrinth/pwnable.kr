@@ -22,7 +22,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] memcpy
   * [x] asm
   * [x] unlink
-  * [ ] blukat
+  * [x] blukat
   * [ ] horcruxes
 
 ## 2. Rookiss
