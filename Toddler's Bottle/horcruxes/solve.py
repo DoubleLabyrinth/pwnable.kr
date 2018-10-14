@@ -26,6 +26,7 @@ def ExtraExp(s):
     end = s.find(')', start)
     return int(s[start:end])
 
+sleep(0.5)
 print conn.read(),
 SendLine('1')
 print conn.read(),
@@ -62,6 +63,6 @@ if Sum < 0x80000000 - 2 **32:
 print conn.read(),
 SendLine('1')
 print conn.read(),
-SendLine(str(Sum % 2 ** 32))
+SendLine(str(Sum))
 print conn.read()
 conn.close()

