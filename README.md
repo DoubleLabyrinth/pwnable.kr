@@ -31,7 +31,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] simple login
   * [x] otp
   * [ ] ascii_easy
-  * [ ] tiny_easy
+  * [x] tiny_easy
   * [x] fsb
   * [ ] dragon
   * [ ] fix
