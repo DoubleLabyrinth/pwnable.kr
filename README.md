@@ -41,7 +41,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] echo2
   * [ ] rsa calculator
   * [ ] note
-  * [ ] alloca
+  * [x] alloca
   * [ ] loveletter
 
 ## 3. Grotesque
