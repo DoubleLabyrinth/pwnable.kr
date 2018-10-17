@@ -31,7 +31,7 @@ int main() {
         argv[i] = argv_other;
     argv[argc] = NULL;
 
-    if (-1 == execve("/home/doublesine/Desktop/tiny_easy", argv, NULL)) {
+    if (-1 == execve("/home/tiny_easy/tiny_easy", argv, NULL)) {
         printf("execve failed! %s\n", strerror(errno));
     }
     return 0;
