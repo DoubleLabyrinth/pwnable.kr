@@ -42,7 +42,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] rsa calculator
   * [ ] note
   * [x] alloca
-  * [ ] loveletter
+  * [x] loveletter
 
 ## 3. Grotesque
   * [ ] proxy server
