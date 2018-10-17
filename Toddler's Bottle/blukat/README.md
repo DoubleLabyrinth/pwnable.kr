@@ -55,58 +55,32 @@ You can see `buf` is allocated at stack and the size of it is 100 bytes. However
     PIE:      No PIE (0x400000)
 ```
 
-If you are scrupulous, you may notice that `blukat` can read `password` file which means `blukat` has `Set-UID` right.
-
-```bash
-blukat@ubuntu:~$ ls -al
-total 36
-drwxr-x---  4 root blukat     4096 Aug 15 22:55 .
-drwxr-xr-x 93 root root       4096 Oct 10 22:56 ..
--r-xr-sr-x  1 root blukat_pwn 9144 Aug  8 06:44 blukat
--rw-r--r--  1 root root        645 Aug  8 06:43 blukat.c
-dr-xr-xr-x  2 root root       4096 Aug 15 22:55 .irssi
--rw-r-----  1 root blukat_pwn   33 Jan  6  2017 password
-drwxr-xr-x  2 root root       4096 Aug 15 22:55 .pwntools-cache
-```
-
-Why not we just launch `blukat` via `gdb` and dump `password` out?
-
-```bash
-blukat@ubuntu:~$ gdb ./blukat
-
-GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1
-Copyright (C) 2016 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-and "show warranty" for details.
-This GDB was configured as "x86_64-linux-gnu".
-Type "show configuration" for configuration details.
-For bug reporting instructions, please see:
-<http://www.gnu.org/software/gdb/bugs/>.
-Find the GDB manual and other documentation resources online at:
-<http://www.gnu.org/software/gdb/documentation/>.
-For help, type "help".
-Type "apropos word" to search for commands related to "word"...
-Reading symbols from ./blukat...(no debugging symbols found)...done.
-
-(gdb) b *main+110
-Breakpoint 1 at 0x400868
-
-(gdb) r
-Starting program: /home/blukat/blukat
-guess the password!
-aaa
-
-Breakpoint 1, 0x0000000000400868 in main ()
-(gdb) x /s &password
-0x6010a0 <password>:    "cat: password: Permission denied\n"
-
-(gdb)
+After some search, here is the solution:
 
 ```
+blukat@ubuntu:~$ id
+uid=1104(blukat) gid=1104(blukat) groups=1104(blukat),1105(blukat_pwn)
+blukat@ubuntu:~$
+```
 
-Just use `password` to get the flag:
+You will find that you are in `blukat_pwn` group which means you have right to read `password`
+
+```
+blukat@ubuntu:~$ cat password
+cat: password: Permission denied
+```
+
+You may wander why you cannot read `password`. Well, the fact is that the content of `password` is `"cat: password: Permission denied"`. If you don't believe, you can do this:
+
+```
+blukat@ubuntu:~$ cat password 2>/dev/null
+cat: password: Permission denied
+blukat@ubuntu:~$
+```
+
+If you are really not allowed to read `password`, you will get nothing for errors have been redirected to `/dev/null`.
+
+So just use the password you got to get the flag:
 
 ```bash
 blukat@ubuntu:~$ ./blukat
