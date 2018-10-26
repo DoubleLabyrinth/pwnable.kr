@@ -38,7 +38,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] syscall
   * [x] crypto1
   * [x] echo1
-  * [ ] echo2
+  * [x] echo2
   * [ ] rsa calculator
   * [ ] note
   * [x] alloca
