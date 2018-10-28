@@ -2,9 +2,11 @@
 
 ## 1. Challenge
 
-> Mom? how can I pass my input to a computer program?  
->   
-> ssh input2@pwnable.kr -p2222 (pw:guest)  
+```
+Mom? how can I pass my input to a computer program?
+
+ssh input2@pwnable.kr -p2222 (pw:guest)
+```
 
 ## 2. Solution
 

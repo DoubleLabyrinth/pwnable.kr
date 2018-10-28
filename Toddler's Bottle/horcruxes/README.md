@@ -2,11 +2,13 @@
 
 ## 1. Challenge
 
-> Voldemort concealed his splitted soul inside 7 horcruxes.  
-> Find all horcruxes, and ROP it!  
-> author: jiwon choi  
->   
-> ssh horcruxes@pwnable.kr -p2222 (pw:guest)  
+```
+Voldemort concealed his splitted soul inside 7 horcruxes.
+Find all horcruxes, and ROP it!
+author: jiwon choi
+
+ssh horcruxes@pwnable.kr -p2222 (pw:guest)
+```
 
 ## 2. Solution
 
@@ -23,8 +25,6 @@ horcruxes@ubuntu:~$
 Fine. Let's download `horcruxes` and drop it into IDA. You can find that there are 7 random integers, `a`, `b`, `c`, ... `g`, generated and `sum` is set to the sum of these 7 integers in function `init_ABCDEFG()`. Because the seed of function `rand()` is set by 4 bytes read from `/dev/urandom`, we cannot hack it.
 
 Now let's go to see function `ropme()`. 
-
-
 
 ```c
 int ropme() {
@@ -142,9 +142,7 @@ You found "Harry Potter" (EXP +94303011)
 
 Select Menu: 1
 How many EXP did you earned? :  -1743825159
-Magic_spell_1s_4vad4_K3daVr4!
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx!
 
 [*] Closed connection to localhost port 9032
-horcruxes@ubuntu:
 ```
-

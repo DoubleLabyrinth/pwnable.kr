@@ -2,10 +2,12 @@
 
 ## 1. Challenge
 
-> Sometimes, pwnable is strange...  
-> hint: if this challenge is hard, you are a skilled player.  
->   
-> ssh blukat@pwnable.kr -p2222 (pw: guest)  
+```
+Sometimes, pwnable is strange...
+hint: if this challenge is hard, you are a skilled player.
+ 
+ssh blukat@pwnable.kr -p2222 (pw: guest)
+```
 
 ## 2. Solution
 
@@ -86,6 +88,6 @@ So just use the password you got to get the flag:
 blukat@ubuntu:~$ ./blukat
 guess the password!
 cat: password: Permission denied
-congrats! here is your flag: Pl3as_DonT_Miss_youR_GrouP_Perm!!
+congrats! here is your flag: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx!!
 ```
 
