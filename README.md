@@ -35,7 +35,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [x] fsb
   * [x] dragon
   * [x] fix
-  * [ ] syscall
+  * [x] syscall
   * [x] crypto1
   * [x] echo1
   * [x] echo2
