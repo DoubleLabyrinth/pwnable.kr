@@ -46,7 +46,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
 
 ## 3. Grotesque
   * [ ] proxy server
-  * [ ] rootkit
+  * [x] rootkit
   * [ ] dos4fun
   * [ ] ascii
   * [ ] aeg
