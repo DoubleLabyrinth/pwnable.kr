@@ -52,7 +52,7 @@ pwn challenges in [pwnable.kr](http://pwnable.kr "http://pwnable.kr")
   * [ ] aeg
   * [ ] coin2
   * [ ] maze
-  * [ ] wtf
+  * [x] wtf
   * [ ] sudoku
   * [ ] starcraft
   * [ ] cmd3
